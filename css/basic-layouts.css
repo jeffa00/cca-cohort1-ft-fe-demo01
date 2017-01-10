@@ -1,0 +1,35 @@
+/** {
+    border: 5px solid red;
+}*/
+
+div {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.container {
+    background-color: darkorchid;
+}
+
+.demobox {
+    background-color: papayawhip;
+    text-align: center;
+    width: 25%;
+    /*display: inline;*/
+}
+
+#div2 {
+    /*float: right;*/
+}
+
+#div3 {
+    /*display: none;*/
+    /*position: static;*/
+    /*position: relative;*/
+    /*position: absolute;*/
+    /*position: fixed;
+    top: 30px;
+    left: 30px;*/
+
+    /*float: left;*/
+}
