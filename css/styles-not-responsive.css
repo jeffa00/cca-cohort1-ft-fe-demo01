@@ -11,8 +11,6 @@ main, section, article, aside, footer, header, nav, hgroup {
 body {
     background-color: rgb(25,52,65);
     color: rgb(252,255,245);
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 header, article, aside {
@@ -23,10 +21,6 @@ header {
     margin-bottom: .5rem;
 }
 
-article {
-    padding: .5rem;
-}
-
 aside section {
     background-color: rgb(145,170,157);
     padding: 1rem;
@@ -34,7 +28,7 @@ aside section {
 }
 
 .main-logo img {
-    height: 60px;
+    height: 70px;
 }
 
 figure {
@@ -53,6 +47,17 @@ figure img {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+main {
+    width: 68.5%;
+    float: left;
+    margin-right: 1rem;
+}
+
+aside {
+    width: 30%;
+    float: left;
 }
 
 h1 {
@@ -99,62 +104,4 @@ aside a:visited {
 a:hover {
     color: rgb(252,255,245);
     text-decoration: underline;
-}
-
-@media print {
-    body, header, main, aside, section, article, aside section {
-        background-color: white;
-        color: black;
-    }
-
-    nav ul {
-        display: none;
-    }
-
-    article h1 {
-        text-decoration: underline;
-    }
-
-}
-
-/*@media (min-width: 800px) and (max-width: 1024px) {
-    body, header, main, aside, section, article, aside section {
-        background-color: red;
-        color: yellow;
-    }
-}*/
-
-@media (min-width: 700px) {
-    figure {
-        float:left;
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: 800px) {
-    main {
-        width: 68.5%;
-        float: left;
-        margin-right: 1rem;
-    }
-
-    aside {
-        width: 30%;
-        float: left;
-    } 
-
-    .main-logo img {
-        height: 70px;
-    }   
-}
-
-@media (min-resolution: 166dpi) and (min-width: 1600px) {
-    /*body, header, main, aside, section, article, aside section {
-        background-color: red;
-        color: yellow;
-    }*/
-    body {
-        max-width: 1600px;
-        font-size: 3rem;
-    }
 }

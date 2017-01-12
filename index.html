@@ -4,6 +4,7 @@
     <title>CCA News Network</title>
     <!--<link href="/css/normalize.css" rel="stylesheet">-->
     <link href="/css/styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -29,7 +30,16 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat sapien sodales ante congue, eget faucibus nulla placerat. Nam gravida commodo felis iaculis mollis. Integer dolor ipsum, blandit posuere congue nec, viverra tincidunt nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus felis nunc, eget mollis dolor feugiat eu. Suspendisse potenti. Fusce nunc ante, semper varius tortor aliquet, dapibus vulputate eros. Morbi vel mollis dolor. Fusce quis luctus leo. Proin tempor lectus leo, sit amet molestie sapien sagittis at. Sed hendrerit tincidunt sapien. Pellentesque luctus, nisi et semper suscipit, orci lacus condimentum justo, eget ultrices libero velit vel mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus ullamcorper ligula, a sodales lorem volutpat in. Sed blandit lectus nec leo scelerisque cursus. Donec facilisis, est non congue semper, ligula diam sollicitudin lectus, eu bibendum nisi neque ut erat.
             </p>
             <figure>
-                <img src="/images/cca-entrance-440.jpg" alt="CCA Entrance">
+
+
+                <picture>
+                    <source media="(min-width: 500px)" srcset="/images/cca-entrance-880.jpg, /images/cca-entrance-1760.jpg 2x">
+                    <source media="(min-width: 450px)" srcset="/images/cca-entrance-440.jpg, /images/cca-entrance-880.jpg 2x">
+                    <source media="(max-width: 400px)" srcset="/images/cca-entrance-220.jpg, /images/cca-entrance-440.jpg 2x">
+                    <img src="/images/cca-entrance-1760.jpg" alt="Code Career Academy Entrance">
+                </picture>
+                <!--<img src="/images/cca-entrance-1760.jpg" alt="Code Career Academy Entrance">-->
+
                 <figcaption>The Entrance for Code Career Academy
                 </figcaption>
             </figure>
